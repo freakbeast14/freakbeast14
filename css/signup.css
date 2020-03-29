@@ -18,7 +18,7 @@ body
 }
 
 
-form #l1:hover , form #l2:hover,form #l3:hover , form #l4:hover,form #l5:hover,form #l6:hover,form #l7: hover,form #l8:hover
+form #l1:hover , form #l2:hover,form #l3:hover , form #l4:hover,form #l5:hover,form #l6:hover , form #l7:hover,form #l8:hover
 {
 	color:white;
 	text-shadow: 3px 3px 2px black;
