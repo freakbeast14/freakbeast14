@@ -1,0 +1,114 @@
+body
+{
+	margin: 22%;
+	background-image: linear-gradient(to right,lime,blue);
+}
+#l1,#l2,#l3,#l4,#l5,#l6,#l7,#l8
+{
+	font-size: 100%;
+	font-family: verdana;
+	margin: 0 auto;
+	margin: 62%;
+	color: purple;
+
+}
+#l2
+{
+	margin-left:79%;
+}
+
+
+form #l1:hover , form #l2:hover,form #l3:hover , form #l4:hover,form #l5:hover
+{
+	color:white;
+	text-shadow: 3px 3px 2px black;
+}
+#password,#username
+{
+	margin-left: 35%;
+	margin-top: 10%;
+	margin-bottom: 20%;
+}
+form #password:hover, form #username:hover,form #email:hover,form #date:hover
+{
+		box-shadow: 5px 5px 2px black;
+}
+#submit
+{
+	margin-left: 76%;
+	margin-top: 20%;
+	color: red;
+}
+form #submit:hover
+{
+	color:blue;
+	box-shadow: 3px 3px 2px black;
+}
+form
+{
+padding: 10% 50% 20% 10%;
+background-image: linear-gradient(red,yellow);	
+}
+form:hover
+{
+	box-shadow: 10px 10px 5px black;
+}
+#i1
+{
+width: 120px;
+height: 120px;
+margin-left: 50%;
+margin-bottom: 30%;
+border-radius: 60px;
+}
+#email
+{
+	margin: 5%;
+	margin-left: 35%;
+}
+#date
+{
+	margin-left:43%; 
+	margin-top: 10%;
+	margin-bottom: 25%;
+}
+#email
+{
+	margin-bottom: 25%;
+}
+#male,#female,#other
+{
+	margin-top: 2%;
+	margin-left: 90%;
+	margin-bottom: 30%;
+}
+#l5
+{
+	margin-left: 80%;
+}
+#l6
+{
+margin-left: 75%;
+}
+#l7
+{
+margin-left: 78%;
+}
+#l4
+{
+	margin-left: 68%;
+}
+@media screen and (min-width:768px)
+{
+	body
+	{
+		margin:35%;
+	}
+}
+@media screen and (min-width:1120px)
+{
+	body
+	{
+		margin:40%;
+	}
+}
