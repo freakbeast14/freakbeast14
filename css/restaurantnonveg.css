@@ -1,0 +1,68 @@
+       body
+		{
+			background: lightblue;
+		}
+		header
+		{
+			
+			background: url('images/ocean2.jpg');
+			width: 90%;
+			height: 50vh;
+			margin-left: 4.5%;
+		}
+        h1
+        {
+        	text-align: center;
+        }
+        .container1,.container2,.container3
+        {
+        	width: 40%;
+        	margin-left: 4.5%;
+        	margin-top: 4.5%;
+        }
+         #matter1,#matter2,#matter3
+        {
+        	color: white;
+        	float: right;
+        	width: 50%;
+        	margin-top: -58%;
+        }  
+@media screen and (min-width: 768px)
+{
+        .container1
+        {
+            float: left;
+        	width: 15%;
+        }
+        #matter1
+        {
+        	float: left;
+        }
+        .container2
+        {
+        	float: left;
+        	width: 15%;
+        }
+        #matter2
+        {
+        	float: left;
+
+        }
+        .container3
+        {
+        	float: left;
+        	width: 15%;
+        }
+        #matter3
+        {
+        	float: left;
+        }
+        #matter1,#matter2,#matter3
+        {
+        	color: white;
+        	margin-top:4.5%; 
+        	margin-left:2%;
+        	width: 10%;
+        }
+ }
+        
