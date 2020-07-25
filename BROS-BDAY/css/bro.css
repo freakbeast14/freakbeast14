@@ -28,7 +28,7 @@
         .onoffswitch {
     position: absolute; width: 81px;
     left: 40%;
-    top: 115%;
+    top: 125%;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
@@ -88,7 +88,7 @@
     width: 50%;
     position: absolute;
     left: 25%;
-    top: 110%;
+    top: 120%;
     font-family: verdana;
     font-size: 20px;
 }
