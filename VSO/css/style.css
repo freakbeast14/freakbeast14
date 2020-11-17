@@ -1,0 +1,94 @@
+        input {
+            font:17px Verdana;
+            margin: 10px;
+            padding: 10px;
+            color: #FFD662FF;
+        }
+        input[type="date"]{
+            background-color: #00539CFF;
+            border-radius: 15px;
+            border: none;
+            text-align: center;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+        table th
+        {
+        background-image: linear-gradient(#8a9a5b,#9b870c);
+        color: #ffffff;
+        border-radius: 5px 5px 0 0;
+        font-size: 17px;
+        padding: 10px;
+        border-bottom: 3px solid #90ee90;
+        font-family: verdana;
+        }
+        
+        th 
+        {
+            text-align: center;
+        }
+        table tr td
+        {
+            background-color: #d0f0c0;
+            font-size: 20px;
+            padding: 15px;
+            font-family: verdana;
+        }
+        table tr
+        {
+            opacity: .7;
+        }
+        table tr:first-child
+        {
+            opacity: 1;
+        }
+        table tr:hover
+        {
+            opacity: 1;
+        }
+        div#block{
+            height: 100%;
+            display: flex;
+            align-items:  center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        body{
+            background: #FFD662FF;
+        }
+        .button {
+  display: inline-block;
+  padding: 10px;
+  margin-top: -1px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#note{
+    text-align: center;
+    font-family: verdana;
+    color:#4A274F;
+}

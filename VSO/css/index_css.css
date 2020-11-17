@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+	background: #FFD662FF;
+}
+
+#head{
+	background: #FFD662FF;
+	z-index: 1;
+	width: 100%;
+	position: fixed;
+	border-bottom: 5px solid #00539CFF;
+	border-top: 5px solid #00539CFF;
+}
+#image{
+	width: 30%;
+	float: left;
+	margin: 0; 
+	display: flex;
+	justify-content: center; 
+}
+#nav1,#nav2,#nav3{
+	width: 10%;
+	float: right;
+	margin-right: 50px; 
+	display: flex;
+	justify-content: center; 
+}
+#image img{
+	margin-left: 20px;
+}
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+	margin-top: 40px;
+	padding: 10px;
+	font-family: Verdana;
+	color: #00539CFF;
+	border-radius: 15px;
+}
+a:hover{
+	color: white;
+	background:#00539CFF; 
+	transition: background 1s linear; 
+}
+#middle img{
+	width: 100%;
+	margin-top: 100px;
+}
+
+		#div1
+		{
+			font-family: verdana;
+			font-size: 20px;
+			float: left;
+			width: 28%;
+			height: 20vh;
+			padding: 1% 1% 1% 1%;
+			margin-top: 2%;
+			margin-left: 3.5%;
+		}
+		#div2
+		{
+			font-family: verdana;
+			font-size: 20px;
+			float: left;
+			width: 28%;
+			height: 20vh;
+			padding: 1% 1% 1% 1%;
+			margin-top: 2%;
+			margin-left: 2%;
+		}
+		#div3
+		{	
+			font-family: verdana;
+			font-size: 20px;
+			float: right;
+			width: 28%;
+			height: 20vh;
+			padding: 1% 1% 1% 1%;
+			margin-top: 2%;
+			margin-right: 4.2%;
+		}
+#div1 h1,#div2 h1,#div3 h1{
+ font-size: 25px;
+}
+#footer{
+	background: #00539CFF;
+	position: absolute;
+	bottom: 0;
+	color: #FFD662FF;
+	text-align: center;
+	width: 100%; 
+}
+
