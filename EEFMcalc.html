@@ -1,0 +1,146 @@
+<html>
+
+<head>
+<title>Engineering Economic Calculator</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<script language="Javascript">
+
+
+function processData(form) {
+        var j;
+        var i=eval(form.interest.value)/100;
+        var n=eval(form.years.value);
+        var z;
+        for (j = 0; i<form.formulas.length; j++) {
+                if (form.formulas[j].checked) {
+                        break;
+                }
+        }
+        if (j==0) {
+                z=Math.pow((1+i),n);
+        }
+        if (j==1) {
+                z=Math.pow((1+i),-n);
+        }
+        if (j==2) {
+                z=i/(Math.pow((1+i),n)-1);
+        }
+        if (j==3) {
+                z=i*Math.pow((1+i),n)/(Math.pow((1+i),n)-1);
+        }
+        if (j==4) {
+                z=(Math.pow((1+i),n)-1)/i;
+        }
+        if (j==5) {
+                z=(Math.pow((1+i),n)-1)/(i*Math.pow((1+i),n));
+        }
+        if (j==6) {
+                z=(Math.pow((1+i),n)-1)/(Math.pow(i,2)*Math.pow((1+i),n))-(n/(i*Math.pow((1+i),n)));
+        }
+        if (j==7) {
+                z=(Math.pow((1+i),n)-1)/Math.pow(i,2)-(n/i);
+        }
+        if (j==8) {
+                z=1/i-(n/(Math.pow((i+1),n)-1))
+        }
+        if (j==9) {
+                z=(1+i*n)-1;
+        }
+        if (j==10) {
+                z=Math.pow((1+(12*i/n)),n/12)-1;
+        }
+        if (j==11) {
+                z=Math.pow(Math.E,i*n)-1;
+        }
+        form.answer.value=z;
+        form.symbol.value=z*eval(form.fpag.value);
+}
+
+
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="_themes/tp-circ5/tp-c1111.css" mstheme>
+<meta name="Microsoft Theme" content="tp-circ5 1111, default">
+<meta name="Microsoft Border" content="tl, default">
+</head>
+
+<body link="#FFFF00">
+
+<form>
+ <div align="center"><center><p><font size="5" color="#800000">Engineering
+  Economics</font> </p>
+  </center></div><table border="0" width="73%" height="150">
+    <tr>
+      <td width="85%" align="left" height="50"><font color="#800000">Enter Interest Rate: (as a
+      percentage) <b>i</b>&nbsp;</font></td>
+      <td width="33%" align="center" height="50"><font color="#800000"><input type="text"
+      name="interest" size="10"></font></td>
+    </tr>
+    <tr>
+      <td width="85%" align="left" height="50"><font color="#800000">Enter the period: (in
+      years) <b>n</b>&nbsp;&nbsp;&nbsp;</font></td>
+      <td width="33%" align="center" height="50"><font color="#800000"><input type="text"
+      name="years" size="10"></font></td>
+    </tr>
+    <tr>
+      <td width="85%" align="left" height="50"><font color="#800000">Enter a value for <b>F,P,A,</b>or
+      <b>G</b> here:</font></td>
+      <td width="33%" align="center" height="50"><font color="#800000"><input type="text"
+      name="fpag" size="10"></font></td>
+    </tr>
+  </table>
+  <div align="center"><center><p style="line-height: 100%"><font color="#800000">&nbsp;<b><u>Choose
+  ONE formula from the following list</u></b></font></p>
+  </center></div><div align="center"><center><p>&nbsp; </p>
+  </center></div><table border="0" width="100%">
+    <tr>
+      <td width="50%" align="left"><div align="left"><p><font color="#800000"><input
+      type="radio" name="formulas" checked value="1">Single Payment Compound Amount(F/P)</font></td>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="2">Single Payment Present Worth(P/F)</font></td>
+    </tr>
+    <tr>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="3">Uniform Series Sinking Fund(A/F)</font></td>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="4">Capital Recovery(A/P)</font></td>
+    </tr>
+    <tr>
+      <td width="50%" align="left"><div align="left"><p><font color="#800000"><input
+      type="radio" name="formulas" value="5">Uniform Series Compound Amount(F/A)</font></td>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="6">Uniform Series Present Worth(P/A)</font></td>
+    </tr>
+    <tr>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="7">Uniform Gradient Present Worth</font></td>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="8">Uniform Gradient Future Worth</font></td>
+    </tr>
+    <tr>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="9">Uniform Gradient Uniform Series[gives only G(A/G) doesnot include A1]</font></td>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="10">Simple Interest Rate</font></td>
+    </tr>
+    <tr>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="11">Effective Interest Rate</font></td>
+      <td width="50%" align="left"><font color="#800000"><input type="radio" name="formulas"
+      value="12">Continuous Interest Rate</font></td>
+    </tr>
+  </table>
+  <p><font color="#800000">Calculated Formula: <input type="text" name="answer" size="15">&nbsp;
+  Calculated Symbol:&nbsp; <input type="text" name="symbol" size="15"></font></p>
+  <p><font color="#800000"><input type="button" value="CALCULATE"
+  onClick="javascript:processData(this.form)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input
+  type="reset" value="RESET"> </font></p>
+</form>
+
+<p align="center">&nbsp;</p>
+
+<p align="center"><font size="1" color="#800000">Copyright (c) 1999-2000. All Rights
+Reserved by Daniel Pitera &amp; Mayank Desai</font> </p>
+</body>
+</html>
