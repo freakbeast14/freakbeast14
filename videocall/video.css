@@ -17,7 +17,7 @@ html,body{
 .scroller{
   background: inherit;
   width: 250px;
-  height: 40%;
+  height: 50%;
   position: absolute;
   right: 40px;
   top: 40px;
