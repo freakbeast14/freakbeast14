@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm an international Master's student in Computer Science at Arizona State University actively seeking full-time opportunities. I bring valuable skills from a summer internship at Amrock, specializing in Angular, C#, .NET, and PostgreSQL. With two prior internships during my Bachelors, I gained proficiency in Spring, AWS, Docker, and ReactJS, along with enhancing my soft skills in a team environment. My academic journey includes hands-on projects, and I hold certifications in various courses and specializations. Eager to contribute my technical expertise and collaborate with passionate tech enthusiasts. Let's connect and explore opportunities together!
+I'm an international Master's student in Computer Science at Arizona State University actively seeking full-time opportunities. I bring valuable skills from a summer internship at Amrock, specializing in Angular, C#, .NET, and PostgreSQL. With two prior internships during my Bachelors, I gained proficiency in Java, AWS, Docker, and ReactJS, along with enhancing my soft skills in a team environment. My academic journey includes hands-on projects, and I hold certifications in various courses and specializations. Eager to contribute my technical expertise and collaborate with passionate tech enthusiasts. Let's connect and explore opportunities together!
 
 
 ## 🌐 Socials:
